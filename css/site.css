@@ -1,19 +1,27 @@
-html {
+html,
+body {
   position: relative;
+  color: #212121;
+  height: 100%;
   min-height: 100%;
 }
 
-body {
+body>main {
   margin-bottom: 60px;
 }
 
-.footer {
-  position: absolute;
-  bottom: 0;
+main > .container {
+  padding: 60px 15px 0;
+}
+
+.homeBG {
   width: 100%;
-  height: 60px;
-  line-height: 60px;
-  background-color: #f5f5f5;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(/img/GridBG.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .homeText {
@@ -23,80 +31,8 @@ body {
   color: rgb(195, 255, 0);
 }
 
-body > .container {
-  padding: 60px 15px 0px;
-  border: solid;
-}
-
-.footer > .container {
-  padding-right: 15px;
-  padding-left: 15px;
-}
-
-code {
-  font-size: 80%;
-}
-
-.row > div {
-  margin-bottom: 15px;
-}
-
-.content {
-  min-height: 300px;
-  background: #dbdfe5;
-}
-
-.content .bg-alt {
-  background: #b4bac0;
-}
-
-.sidebar {
-  background-color: cadetblue;
-}
-
-.sidebar-top {
-  min-height: 140px;
-  background: #dbdfe7;
-}
-
-.sidebar-bottom {
-  min-height: 145px;
-  background: #7e8aa0;
-  margin-bottom: -15px;
-}
-
-.sidebar,
-.content {
-  min-height: 300px;
-}
-
-.content-top {
-  min-height: 160px;
-  background: #b4bac0;
-}
-
-.content-bottom {
-  min-height: 125px;
-  background: #7e8aa0;
-  margin-bottom: -15px;
-}
-
-.content-bottom.bg-alt {
-  background: #9ca5b6;
-}
-
-.intro {
-  background: #7e8aa0;
-  min-height: 250px;
-}
-
-.section {
-  min-height: 150px;
-  background: #dbdfe5;
-}
-
-.section.bg-alt {
-  background: #b4bac0;
+.minHeight {
+  min-height: 80vh;
 }
 
 @media (max-width: 991px) {
