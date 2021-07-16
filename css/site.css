@@ -6,12 +6,16 @@ body {
   min-height: 100%;
 }
 
-body>main {
+body > main {
   margin-bottom: 60px;
 }
 
 main > .container {
   padding: 60px 15px 0;
+}
+
+main>.container-fluid {
+  padding-top: 40px;
 }
 
 .homeBG {
