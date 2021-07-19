@@ -47,3 +47,14 @@ main>.container-fluid {
     margin-bottom: -15px;
   }
 }
+
+.contactBG {  
+  background: #000428;
+  background: -webkit-linear-gradient(to right, #004e92, #000428);
+  background: linear-gradient(to right, #004e92, #000428);
+}
+
+.formBG {
+  background-color: white;
+  box-shadow: #212121;
+}
